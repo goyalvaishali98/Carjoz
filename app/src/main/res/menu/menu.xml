@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Home"
+        android:id="@+id/home"
+        android:icon="@drawable/home">
+    </item>
+
+    <item android:title="Statistics"
+        android:id="@+id/stats"
+        android:icon="@drawable/account">
+    </item>
+
+    <item android:title="Camera"
+        android:id="@+id/camera"
+        android:icon="@drawable/camera">
+    </item>
+
+    <item android:title="Location"
+        android:id="@+id/location"
+        android:icon="@drawable/locationon">
+    </item>
+
+    <item android:title="Settings"
+        android:id="@+id/settings"
+        android:icon="@drawable/settings">
+    </item>
+</menu>

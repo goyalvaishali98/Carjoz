@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+
+    <RelativeLayout
+        android:background="@drawable/gradient1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dashboard"
+        android:textSize="15dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/hamburgericon"
+            android:layout_margin="10dp"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/moveright"
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:elevation="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/white_corners">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:textColor="#17202A"
+            android:textStyle="bold"
+            android:text="Welcome"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:text="Adverts near you"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:layout_below="@id/welcome"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/food_dash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:background="@drawable/white_corners"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/welcome"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:id="@+id/img1_dash"
+            android:src="@drawable/dashpizza"
+            android:layout_centerHorizontal="true"
+            android:layout_width="40dp"
+            android:layout_marginTop="10dp"
+
+            android:layout_height="40dp"/>
+        <TextView
+            android:id="@+id/tv_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img1_dash"
+            android:text="Food"
+            android:textColor="#17202A"
+            android:textSize="15dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_food"
+            android:text="8 Offers"
+            android:textSize="15dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/travel_dash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:background="@drawable/white_corners"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/welcome"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:id="@+id/img2_dash"
+            android:src="@drawable/globe"
+            android:layout_centerHorizontal="true"
+            android:layout_width="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="40dp"/>
+        <TextView
+            android:id="@+id/tv_travel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img2_dash"
+            android:text="Travel"
+            android:textColor="#17202A"
+            android:textSize="15dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_travel"
+            android:text="0 Offers"
+            android:textSize="15dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/entertainment_dash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:background="@drawable/white_corners"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/food_dash"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/img3_dash"
+            android:src="@drawable/dashnotes"
+            android:layout_centerHorizontal="true"
+            android:layout_width="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="40dp"/>
+        <TextView
+            android:id="@+id/tv_entertainment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img3_dash"
+            android:text="Entertainment"
+            android:textColor="#17202A"
+            android:textSize="15dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_entertainment"
+            android:text="2 Offers"
+            android:textSize="15dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sport_dash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:background="@drawable/white_corners"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/travel_dash"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/img4_dash"
+            android:src="@drawable/dashsports"
+            android:layout_centerHorizontal="true"
+            android:layout_width="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="40dp"/>
+        <TextView
+            android:id="@+id/tv_sport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img4_dash"
+            android:text="Sport"
+            android:textColor="#17202A"
+            android:textSize="15dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_sport"
+            android:text="5 Offers"
+            android:textSize="15dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/retail_dash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:background="@drawable/white_corners"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/entertainment_dash"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/img5_dash"
+            android:src="@drawable/dashretail"
+            android:layout_centerHorizontal="true"
+            android:layout_width="40dp"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginBottom="10dp"
+            android:layout_height="40dp"/>
+        <TextView
+            android:id="@+id/tv_retail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img5_dash"
+            android:text="Retail"
+            android:textColor="#17202A"
+            android:textSize="15dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_retail"
+            android:text="0 Offers"
+            android:textSize="15dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/weight_dash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:background="@drawable/white_corners"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/sport_dash"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/img6_dash"
+            android:src="@drawable/addweight"
+            android:layout_centerHorizontal="true"
+            android:layout_width="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="40dp"/>
+        <TextView
+            android:id="@+id/tv_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img6_dash"
+            android:text="Add Weight"
+            android:textColor="#17202A"
+            android:textSize="15dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/yourname"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:elevation="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/retail_dash"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/white_corners">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:textColor="#17202A"
+            android:textStyle="bold"
+            android:text="Your Name"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/navigation"
+        android:layout_alignParentBottom="true"
+        app:itemTextColor="#17202A"
+        app:menu="@menu/menu"
+        android:elevation="10dp"
+        android:background="#FFFFFF"
+        />
+
+</RelativeLayout>
